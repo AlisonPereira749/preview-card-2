@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root {
+    --font-1: 'Inter', sans-serif;
+    --font-2: 'Lexend Deca', sans-serif;
+
+    --p-main-background: hsl(233, 47%, 7%);
+    --p-card-background: hsl(244, 38%, 16%);
+    --p-Soft-violet-accent: hsl(277, 64%, 61%);
+
+    --n-main-heading-stats: hsl(0, 0%, 100%);
+    --n-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --n-stat-headings: hsla(0, 0%, 100%, 0.6);
+    --n-sobreposisao: hsla(279, 90%, 40%, 0.418);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--p-main-background);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_container {
+    width: 80%;
+    height: 450px;
+    background-color: var(--p-card-background);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content_left {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_left .title {
+    font-family: var(--font-1);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+span {
+    color: var(--p-Soft-violet-accent);
+}
+
+.content_left .description {
+    font-family: var(--font-2);
+    color: var(--n-stat-headings);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.content_left .stats_container {
+    font-family: var(--font-1);
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.content_left .stats_container h6 {
+    font-size: 11px;
+    color: var(--n-stat-headings);
+    font-weight: 400;
+}
+
+/* Box da Dreita */
+
+.content_right {
+    width: 50%;
+    height: 100%;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content_right::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--n-sobreposisao);
+}

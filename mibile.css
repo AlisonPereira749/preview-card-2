@@ -1,0 +1,48 @@
+.container {
+    height: auto;
+}
+
+.card_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_right {
+    width: 90%;
+    height: 450px;
+}
+
+/* Box da Esquerda */
+.content_left {
+    width: 80%;
+    padding: 20px;
+}
+
+.content_left .description {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.content_left .stats_container {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.content_left .stats_container h6 {
+    font-size: 16px;
+}
+
+.stat {
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+/* Box da Direita */
+.content_right {
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
